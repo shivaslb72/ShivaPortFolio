@@ -1,0 +1,33 @@
+{
+  "name": "shivaportfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivaslb72/ShivaPortFolio.git"
+  },
+  "keywords": [
+    "React",
+    "Tailwind"
+  ],
+  "author": "Shivakumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivaslb72/ShivaPortFolio/issues"
+  },
+  "homepage": "https://github.com/shivaslb72/ShivaPortFolio#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3"
+  }
+}
