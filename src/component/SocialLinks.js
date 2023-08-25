@@ -12,7 +12,7 @@ const SocialLinks = () => {
         LinkedIn <FaLinkedin size={30} />
       </>
     ),
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/shivakumar-bannimatti-38754012b/", 
     style: "rounded-tr-md",
   },
   {
