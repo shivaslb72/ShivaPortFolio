@@ -40,10 +40,12 @@ const SocialLinks = () => {
         Resume <BsFillPersonLinesFill size={30} />
       </>
     ),
-    href: "/SHIVA-CV.pdf",
+    href: `${process.env.PUBLIC_URL}/SHIVA-CV.pdf`, // Using absolute URL
     style: "rounded-br-md",
-    download: true,
+    download: "SHIVA-CV.pdf", // Set download attribute
   },
+
+  
 ];
 
   return (

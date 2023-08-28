@@ -1,5 +1,5 @@
 import React from "react";
-import arrayDestruct from "../../assets/portfoilio/arrayDestruct.jpg"
+import arrayDestruct from "../../assets/portfoilio/arrayDestruct1.jpg"
 import installNode from "../../assets/portfoilio/installNode.jpg"
 import navbar from "../../assets/portfoilio/navbar.jpg"
 import reactParallax from "../../assets/portfoilio/reactParallax.jpg"
@@ -35,6 +35,29 @@ const Portfolio = () => {
    },
  ];
 
+ const handleDemoClick = (id) => {
+  switch (id) {
+    case 1:
+      window.open("https://namaste-react-chi.vercel.app/", "_blank");
+      break;
+    // Add more cases for other portfolio items if needed
+    default:
+      break;
+  }
+};
+
+const handleCodeClick = (id) => {
+  switch (id) {
+    case 1:
+      window.open("https://github.com/shivaslb72/Namaste-React.git", "_blank");
+
+      break;
+    // Add more cases for other portfolio items if needed
+    default:
+      break;
+  }
+};
+
  return (
    <div
      name="portfolio"
@@ -55,12 +78,13 @@ const Portfolio = () => {
                src={src}
                alt=""
                className="rounded-md duration-200 hover:scale-105"
+               style={{height:"195px",width:"366px"}}
              />
              <div className="flex items-center justify-center">
-               <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+               <button onClick={() => handleDemoClick(id)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                  Demo
                </button>
-               <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+               <button onClick={() => handleCodeClick(id)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                  Code
                </button>
              </div>
